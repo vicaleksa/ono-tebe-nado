@@ -6,7 +6,8 @@
 
 .header {
     width: 1052px;
-    height: 293px;
+    margin-top: 92px;
+    margin-bottom: 92px;
     display: grid;
     grid-template-columns: 1fr 168px 1fr;
 }
@@ -20,6 +21,10 @@
 .header__links-list-item_no-bullit {
     font-size: 18px;
     list-style: none;
+}
+
+.header__link_active {
+    text-decoration: none;
 }
 
 .header__links-list-item {
@@ -47,17 +52,11 @@
     margin-left: 150px;
 }
 
-.tel {
-    letter-spacing: 0.01em;
-}
-
-.mail {
-    letter-spacing: 0.01em;
-}
-
 .cover {
     position: relative;
-    height: 757px;
+    background-image: url(/images/cover.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .cover-img {
@@ -65,7 +64,6 @@
     inset: 0;
     object-fit: cover;
     object-position: center;
-    height: 757px;
 }
 
 .overlay {
@@ -75,8 +73,7 @@
 }
 
 .cover__title {
-    position: absolute;
-    inset: 0;
+    position: relative;
     padding-top: 165px;
     padding-left: 50px;
     padding-right: 50px;
@@ -115,14 +112,15 @@ h1 {
 }
 
 .cover__description {
-    position: absolute;
-    left: 78px;
-    bottom: 51px;
+    position: relative;
+    padding-top: 128px;
+    padding-bottom: 51px;
+    padding-left: 78px;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 79px;
-    justify-content: center;
+    gap: 71px;
     color: white;
 }
 
@@ -131,10 +129,6 @@ h1 {
     font-size: 22px;
     line-height: 28px;
     word-spacing: 0.9em;
-}
-
-.word-spacing {
-    word-spacing: 0.8em;
 }
 
 .bet-button {
@@ -146,9 +140,10 @@ h1 {
     font-weight: 500;
     font-size: 22px;
     border: 1px solid white;
+    cursor: pointer;
 }
 
-h2 {
+.lots__heading {
     font-size: 40px;
     text-transform: uppercase;
 }
@@ -169,7 +164,7 @@ h2 {
 
 .lots__card-list-item {
     width: 334px;
-    height: 563px;
+    min-height: 563px;
     flex-grow: 1;
 }
 
@@ -180,11 +175,22 @@ h2 {
     height: 100%;
 }
 
-.card-image {
-    position: absolute;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
+.card_type_film {
+    background-image: url(/images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card_type_book {
+    background-image: url(/images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card_type_picture {
+    background-image: url(/images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .card {
@@ -238,6 +244,8 @@ h2 {
 
 .about__title {
     padding-top: 136px;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 .about__text {
