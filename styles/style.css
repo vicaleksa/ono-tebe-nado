@@ -79,7 +79,7 @@
     padding-right: 50px;
 }
 
-h1 {
+.cover__title {
     font-size: 100px;
     text-transform: uppercase;
     line-height: 115%;
@@ -144,10 +144,10 @@ h1 {
 }
 
 .lots__heading {
-    font-size: 40px;
-    text-transform: uppercase;
     margin-top: 179px;
     margin-left: 64px;
+    font-size: 40px;
+    text-transform: uppercase;
 }
 
 .lots__card-list {
